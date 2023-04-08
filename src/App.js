@@ -8,13 +8,18 @@ import { useState } from "react";
 
 
 function App() {
-	const [mode, setMode] = useState("light")
-
+	const [mode, setMode] = useState(() => {
+		// getting stored value
+		const saved = localStorage.getItem("mode");
+		const initialValue = JSON.parse(saved);
+		return initialValue || "light";
+	});
 	const darkTheme = createTheme({
 		palette: {
 			mode: mode
 		}
 	})
+
 	return (
 		<ThemeProvider theme={darkTheme}>
 			<Box bgcolor="background.default" color="text.primary">

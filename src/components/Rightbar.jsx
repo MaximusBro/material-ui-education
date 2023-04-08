@@ -1,14 +1,10 @@
 import { Avatar, AvatarGroup, Box, Divider, ImageList, ImageListItem, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material'
 
-
-
 const Rightbar = () => {
 	return (
-
 		<Box
 			p={6}
 			flex={1}
-
 			sx={{ display: { xs: "none", sm: "block" }, }}>
 			<Box position="fixed" width={300} height="80%" sx={{ overflow: 'auto' }}>
 				<Typography variant='h6'
