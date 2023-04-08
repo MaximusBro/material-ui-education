@@ -42,18 +42,18 @@ const Navbar = () => {
 				<Pets sx={{ display: { xs: "block", sm: "none" } }} />
 				<Search><InputBase placeholder='search...' /></Search>
 				<Icons>
-					<Badge badgeContent={4} color="error">
+					<Badge badgeContent={4} color="error" sx={{ cursor: "pointer" }}>
 						<Mail />
 					</Badge>
-					<Badge badgeContent={4} color="error">
+					<Badge badgeContent={4} color="error" sx={{ cursor: "pointer" }}>
 						<Notifications />
 					</Badge>
-					<Avatar sx={{ width: 30, height: 30 }}
+					<Avatar sx={{ width: 30, height: 30, cursor: "pointer" }}
 						onClick={e => setOpen(true)}
 						src="https://maksym-shydlovskyi.netlify.app/static/media/avatar.1874664e8f24806c3e3d.jpg" />
 				</Icons>
 				<UserBox>
-					<Avatar sx={{ width: 30, height: 30 }}
+					<Avatar sx={{ width: 30, height: 30, cursor: "pointer" }}
 						onClick={e => setOpen(true)}
 						src="https://maksym-shydlovskyi.netlify.app/static/media/avatar.1874664e8f24806c3e3d.jpg" />
 					<Typography variant='span'>Maksym</Typography>
