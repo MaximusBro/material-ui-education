@@ -34,8 +34,8 @@ const posts = [
 const Feed = () => {
 	return (
 		<Box flex={2}>
-			{posts.map(item => {
-				return <Post {...item} />
+			{posts.map((item, index) => {
+				return <Post key={index} {...item} />
 			})}
 		</Box>
 	)

@@ -5,7 +5,7 @@ import { AccountBox, Groups, ModeNight, Person, Settings, Storefront } from '@mu
 import ArticleIcon from '@mui/icons-material/Article';
 
 
-const Sidebar = () => {
+const Sidebar = ({ mode, setMode }) => {
 	return (
 		<Box
 			flex={1}
@@ -75,7 +75,7 @@ const Sidebar = () => {
 							<ListItemIcon>
 								<ModeNight />
 							</ListItemIcon>
-							<Switch />
+							<Switch onChange={e => setMode(mode === "light" ? "dark" : "light")} />
 						</ListItemButton>
 					</ListItem>
 				</List>
